@@ -26,6 +26,6 @@ useEffect : Enables performing side-effects in components
 
 LifeCycle method : 
 componentDidMount - After the component is rendered to DOM
-componentDidUpdaate - After component updates
+componentDidUpdate - After component updates
 componentwillUnmount - Just before the component is removed from DOM
  

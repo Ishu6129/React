@@ -1,9 +1,11 @@
 import React from 'react'
-import FormHandling from './FormHandling/FormHandling'
+import ApiProject from './apiProject/ApiProject'
 
 function App() {
   return (
-    <div><FormHandling/></div>
+    <div>
+      <ApiProject/>
+    </div>
   )
 }
 
