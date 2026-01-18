@@ -1,10 +1,11 @@
 import React from 'react'
 import Card from './components/Card.jsx'
-import heart4 from '../../assets/heart4.png'
-import dollar from '../../assets/dollar.png'
-import chineseCoin from '../../assets/chineseCoin.png'
-import elizabeth from '../../assets/elizabeth.png'
-import bitcoin from '../../assets/bitcoin.png'
+import heart4 from './assets/heart4.png'
+import dollar from './assets/dollar.png'
+import chineseCoin from './assets/chineseCoin.png'
+import elizabeth from './assets/elizabeth.png'
+import bitcoin from './assets/bitcoin.png'
+
 const cardData = [
   {
     name: "Bitcoin",
@@ -42,16 +43,6 @@ const cardData = [
     desc: "A symbol of growth, harmony, and natural abundance—Heart of Leaves represents prosperity rooted in balance and renewal."
   }
 ]
-
-const App = () => {
-  return (
-    <div className="w-full h-full bg-black">
-    <Navbar />
-    <Section1 data={cardData} />
-    </div>
-  )
-}
-
 const App = () => {
   return (
     <>

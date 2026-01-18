@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import Section1 from './components/Section1/Section1.jsx'
-import heart4 from '../../assets/heart4.png'
-import dollar from '../../assets/dollar.png'
-import chineseCoin from '../../assets/chineseCoin.png'
-import elizabeth from '../../assets/elizabeth.png'
-import bitcoin from '../../assets/bitcoin.png'
+import heart4 from './assets/heart4.png'
+import dollar from './assets/dollar.png'
+import chineseCoin from './assets/chineseCoin.png'
+import elizabeth from './assets/elizabeth.png'
+import bitcoin from './assets/bitcoin.png'
 
 const cardData = [
   {
