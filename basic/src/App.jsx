@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './components/Card.jsx'
 import heart4 from './assets/heart4.png'
 import dollar from './assets/dollar.png'
-import chineseCoin from './assets/chinesecoin.png'
+import chineseCoin from './assets/china.png'
 import elizabeth from './assets/elizabeth.png'
 import bitcoin from './assets/bitcoin.png'
 
