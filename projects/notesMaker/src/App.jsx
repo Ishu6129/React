@@ -49,7 +49,7 @@ const App = () => {
                 <X size={15} >
                 </X></button>
               <h2 className="text-black  bg-amber-200 rounded-xl border-b-2 font-bold text-center uppercase wrap-break-words">{item.title}</h2>
-              <p id="scroll" className="text-amber-50 text-sm mt-2 leading-tight overflow-auto max-h-27 wrap-break-wordbreak-words">
+              <p id="scroll" className="text-amber-50 text-sm mt-2 leading-tight overflow-auto max-h-27 wrap-break-words">
                 {item.desc}</p>
             </div>
           ))} 
