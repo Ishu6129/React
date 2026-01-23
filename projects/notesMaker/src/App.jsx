@@ -49,12 +49,12 @@ const App = () => {
         </button>
       </form>
 
-      <div className="lg:w-1/2 px-10 py-8 border-2 border-amber-50 rounded-xl my-2">
+      <div className="lg:w-1/2 m-2 px-8 py-8 border-2 border-amber-50 rounded-xl my-2">
       {(task.length===0)?
         (<h2 className="text-3xl font-semibold text-gray-500 animate-pulse">No Notes Added Yet</h2>):
         (<>
         <h1 className="text-5xl font-bold mb-5">Your Notes</h1>
-        <div id="scroll"  className="flex flex-wrap gap-6 overflow-auto max-h-[77vh]"  >
+        <div id="scroll"  className="flex flex-wrap gap-3 overflow-auto max-h-[77vh]"  >
           {task.map((item,index)=>(
             <div key={index} className="relative border-amber-50 border-2 rounded-xl h-40 w-40 p-3" >
               <button className="absolute top-px right-px text-red-500 bg-amber-300 rounded-2xl  hover:bg-red-500 hover:text-amber-50" onClick={()=>deleteHandler(index)} >
