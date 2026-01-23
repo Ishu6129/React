@@ -1,20 +1,32 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X } from 'lucide-react';
 const App = () => {
+  
+  
   const [title, settitle] = useState("");
   const [desc, setdesc] = useState("")
-  const [task,settask]=useState([]);
+
+  // Load and save tasks to localStorage
+  const [task, settask] = useState(() => {
+  try {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  } catch {
+    return [];
+  }
+});
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(task));
+  }, [task]);
+
+
   const submitHandler = (e) => {
     e.preventDefault();
-    
-    console.log(title,desc);
-
     const copyTask=[...task];
     copyTask.push({title,desc});
     settask(copyTask);
-    console.log(task);
-
     settitle("");
     setdesc("");
   };
@@ -39,7 +51,7 @@ const App = () => {
 
       <div className="lg:w-1/2 px-10 py-8 border-2 border-amber-50 rounded-xl my-2">
       {(task.length===0)?
-        (<h2 className="text-3xl font-semibold text-gray-500">No Notes Added Yet</h2>):
+        (<h2 className="text-3xl font-semibold text-gray-500 animate-pulse">No Notes Added Yet</h2>):
         (<>
         <h1 className="text-5xl font-bold mb-5">Your Notes</h1>
         <div id="scroll"  className="flex flex-wrap gap-6 overflow-auto max-h-[77vh]"  >
